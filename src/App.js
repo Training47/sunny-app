@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import Heading from './components/heading';
+import Form from './components/form';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const api_key="7011195e7fc598f31f9d50649e3d11ad";
+
+  class App extends React.Component {
+
+  state= {
+  temperature: "",
+  city: "",
+  country: "",
+  humidity: "",
+  wind: "",
+  icon: "",
+  description: "",
+  error: ""
 }
+
+  render() {
+  return (
+    <div>
+      <h2><Heading/></h2>
+          <Form/>
+    </div>
+  )
+  }
+}
+    
+
 
 export default App;
