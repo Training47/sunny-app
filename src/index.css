@@ -10,12 +10,11 @@ body {
 
 h1, h3{
   text-align: center;
-
 }
 
 form {
-  margin-left: 70%;  
-  margin-right: 5%;
+  margin-left: 35%;  
+  margin-right: 35%;
   margin-top: 70px;
   padding: 10px;
   display: flex;
@@ -31,6 +30,6 @@ form {
 
 .weather {
   margin-top: 45px;
-  float: right;
-  margin-right: 100px;
+  justify-content: center;
+  
 }

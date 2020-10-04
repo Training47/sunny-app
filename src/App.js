@@ -6,7 +6,7 @@ import Forecast from './components/forecast';
 import './App.css';
 
 
-const apiKeys = "db3edae1c2c0732332bc6e73a526b116";
+const api_keys = "apiKeys";
 
   class App extends React.Component {
 
@@ -52,6 +52,7 @@ if(city && country){
 
   render() {
   return (
+    
     <div className="container">
       <h2><Heading/></h2>
           <Form loadWeather={this.getWeather} />
